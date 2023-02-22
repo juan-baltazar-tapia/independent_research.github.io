@@ -15,6 +15,11 @@
     
     
     
+    
+    
+    
+    
+    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -51,7 +56,7 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <h1 class="u-align-center u-text u-text-default u-text-1">February&nbsp;</h1>
+        <h1 class="u-align-center u-text u-text-default u-text-1">Home Page&nbsp;</h1>
       </div></header>
     <section class="u-black u-clearfix u-section-1" id="sec-c089">
       <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
@@ -138,7 +143,71 @@
     </section>
     <section class="u-align-center u-black u-clearfix u-section-3" id="sec-e2e6">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-align-left u-text u-text-1">Numpy Arrays</p>
+        <p class="u-align-left u-text u-text-1">
+          <span style="font-weight: 700; font-size: 1.5rem;">
+            <span style="font-size: 1.875rem;">&nbsp;Numpy Arrays vs Lists</span>&nbsp;
+          </span>
+          <br>Why use them in the first place instead of Python's built in array data structure? Well, Numpy arrays use less memory, are more efficient, and convenient when doing operations on large data sets. Here is an example of a Numpy array and Python List memory usage.<br>
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-19at2.20.27PM.png" alt="" data-image-width="1974" data-image-height="462">
+        <img class="u-image u-image-default u-image-2" src="images/ScreenShot2023-02-19at2.20.55PM.png" alt="" data-image-width="1408" data-image-height="218">
+        <img class="u-image u-image-contain u-image-default u-image-3" src="images/image.png" alt="" data-image-width="468" data-image-height="15">
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-4" id="sec-554e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">Numpy&nbsp; Arrays Basics</h3>
+        <p class="u-text u-text-2">Similar to the range() function in python, numpy has a arange() function where you can set the starting parameter, the ending parameter, and skip by certain amount parameter.</p>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-19at2.35.30PM.png" alt="" data-image-width="1748" data-image-height="202">
+        <p class="u-text u-text-3">Lets take a look into the memory usage of a single integer in a numpy array. We observe that each integer is using 64 bits of data.&nbsp;</p>
+        <img class="u-image u-image-default u-image-2" src="images/ScreenShot2023-02-19at2.40.36PM.png" alt="" data-image-width="1524" data-image-height="204">
+        <p class="u-text u-text-4"> Numpy allows us to change how many bits this integer array uses by setting dtype (data type) to int8. One downside of using numpy arrays is that they are homogenous, meaning each numpy array can only contain the same datatype.</p>
+        <img class="u-image u-image-default u-image-3" src="images/ScreenShot2023-02-19at2.41.06PM.png" alt="" data-image-width="1446" data-image-height="208">
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-5" id="sec-f3b9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">N-Dimensional Arrays</h3>
+        <p class="u-text u-text-2">You can also create higher dimensional arrays, and use the shape method to find the number of columns, and number of rows</p>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-19at2.53.12PM.png" alt="" data-image-width="1760" data-image-height="318">
+        <p class="u-text u-text-3">The reshape method is used to change the number of rows and columns, such that the column and rows perfectly divide the orignal total length. For example, I could've have reshaped to 6 columns and 1 row as well.</p>
+        <img class="u-image u-image-default u-image-2" src="images/ScreenShot2023-02-19at3.02.05PM.png" alt="" data-image-width="1550" data-image-height="302">
+        <p class="u-text u-text-4">You can create empty arrays with zeros or ones. By defualt they are floating type.</p>
+        <img class="u-image u-image-default u-image-3" src="images/ScreenShot2023-02-19at3.06.15PM.png" alt="" data-image-width="1634" data-image-height="250">
+        <p class="u-text u-text-5">You can alter the arrays by selecting as shown below, you can also select different elements using different operators such as less than, greater than, etc. You can also use the python's slice operations.</p>
+        <img class="u-image u-image-default u-image-4" src="images/ScreenShot2023-02-19at3.09.33PM.png" alt="" data-image-width="1228" data-image-height="310">
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-6" id="sec-cf65">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">Sorting Numpy Arrays</h3>
+        <p class="u-text u-text-2">Sorting Numpy arrays is as simple as using the sort method.&nbsp;</p>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-19at8.44.02PM.png" alt="" data-image-width="1238" data-image-height="208">
+        <p class="u-text u-text-3">You can even change the sorting algorithm that is used. By default, numpy sort uses quicksort</p>
+        <img class="u-image u-image-default u-image-2" src="images/ScreenShot2023-02-19at8.58.04PM.png" alt="" data-image-width="1468" data-image-height="162">
+        <p class="u-text u-text-4">There are two ways to copy an array using NumPy. There is the .view method, and .copy method </p>
+        <img class="u-image u-image-default u-image-3" src="images/ScreenShot2023-02-20at3.46.39PM.png" alt="" data-image-width="1650" data-image-height="524">
+        <p class="u-text u-text-5">The view method will <b>modify&nbsp;</b>the original array. It can be usefull at times, or not, so be carefull. Instead, use the copy method, which won't change the original array
+        </p>
+        <img class="u-image u-image-default u-image-4" src="images/ScreenShot2023-02-20at3.48.22PM.png" alt="" data-image-width="1614" data-image-height="520">
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-7" id="sec-6148">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">Ravel vs Flatten methods</h3>
+        <p class="u-text u-text-2">What if instead of rows and columns, you want a single one dimensional array? You can do that using the ravel and flatten functions. In the same way the <span style="font-weight: 700;">view</span> method affected the orignal arrray, and <span style="font-weight: 700;">copy</span> didn't, the <span style="font-weight: 700;">ravel </span>function makes a <span style="font-weight: 700;">view</span>&nbsp;of the array, and thus effects the orignal array, while the <span style="font-weight: 700;">flatten</span> method makes a <span style="font-weight: 700;">copy </span>of the orignal array. <br>
+          <br>
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-20at4.42.15PM.png" alt="" data-image-width="1596" data-image-height="776">
+        <p class="u-text u-text-3">In summary,&nbsp; flatten method =&gt; copy = modifes original and ravel method =&gt; view =&gt; modifes original<br>
+          <br>
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-8" id="sec-7f56">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">KNN Agorithm...</h3>
+        <p class="u-text u-text-2">Coming Next....</p>
       </div>
     </section>
     
