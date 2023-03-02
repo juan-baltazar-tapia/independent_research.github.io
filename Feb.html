@@ -20,6 +20,10 @@
     
     
     
+    
+    
+    
+    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -59,14 +63,13 @@
         <h1 class="u-align-center u-text u-text-default u-text-1">Home Page&nbsp;</h1>
       </div></header>
     <section class="u-black u-clearfix u-section-1" id="sec-c089">
-      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="fr-view u-align-left u-clearfix u-rich-text u-text u-text-1" data-animation-name="" data-animation-duration="0" data-animation-direction="">
           <h1>Goals for this month</h1>
           <p>
             <span style="font-size: 1.125rem;">
               <span style="font-size: 2.25rem;">
-                <span style="font-size: 1.25rem;">-Understand and demonstrate the following concepts:<img src="images/coolmatrixphoto.png" width="555" align="center" style="width: 535px;" class="fr-dii fr-fic fr-fir">
-                </span>
+                <span style="font-size: 1.25rem;">-Understand and demonstrate the following concepts:</span>
               </span>
             </span>
           </p>
@@ -90,11 +93,9 @@
               <span style="font-size: 1.25rem;">p, metric, n_neighbors and others</span>
             </li>
           </ul>
-          <p>
-            <br>
-          </p>
           <p>-</p>
         </div>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-26at2.30.01PM.png" alt="" data-image-width="1634" data-image-height="932">
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-2" id="sec-5d10">
@@ -124,7 +125,7 @@
             <img src="blob:https://app.desktop.nicepage.com/0335562f-e405-4cbf-af98-124d6a903679" style="width: 1138px;" class="fr-dib fr-fic">
           </p>
           <p>
-            <img src="images/4.png" style="width: 1138px;" class="fr-dib fr-fic">
+            <img src="blob:https://app.desktop.nicepage.com/db03bca9-c22f-4d81-ad24-39650599036f" style="width: 1138px;" class="fr-dib fr-fic">
           </p>
           <p>
             <br>
@@ -206,8 +207,88 @@
     </section>
     <section class="u-clearfix u-grey-5 u-section-8" id="sec-7f56">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-1">KNN Agorithm...</h3>
-        <p class="u-text u-text-2">Coming Next....</p>
+        <h3 class="u-text u-text-1">2/22/2023 - 3/01/2023 K-Nearest Neighbor Classification in Depth</h3>
+        <p class="u-text u-text-2">Background:&nbsp;<span style="font-weight: 400;"> The idea behind the notebook knn-mnist provided by Professor Dancik, is to use kNN to calssify the Modified National Institue of Standards and Technology (MNIST) database, of handwritten digits.&nbsp;</span>
+          <br>First Steps:<span style="font-weight: 400;"> Loading the data</span>
+          <br>
+          <span style="font-weight: 400;"> The load_digits() method loads the MNIST dataset as a dictionary as shown</span>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>The load_digits() returns a dictionary that contains;<br>data: The flattend data matrix<br>target: The Classification Target {ndarray, Series} of shape (1798,)<br>Feature Names: List of the names of the dataset columns<br>target_names: List of the names of target classes<br>images: Raw image data<br>DESCR: The full description of the dataset<br>
+          <br>Next we extract the features and target values (class labels)<br>#pic<br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>X is two -dimensional (1798, 64)<br>This means it has 1797 rows, and 64 columns<br>The columns are a flattened version of the 8x8 image<br>y is ndarray containing the classification target<br>
+          <br>Visulaizing the data<br>Now we will use images, which contain the raw image data, to view the images. Each image can be accesed as follows&nbsp;<br>#pic showing its shape<br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>Lets view the image using the matplotlib library.<br>
+          <br>
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-25at4.26.55PM.png" alt="" data-image-width="2576" data-image-height="510">
+        <img class="u-image u-image-default u-image-2" src="images/ScreenShot2023-02-25at4.29.02PM.png" alt="" data-image-width="1640" data-image-height="276">
+        <img class="u-image u-image-default u-image-3" src="images/ScreenShot2023-02-25at4.31.11PM.png" alt="" data-image-width="1564" data-image-height="676">
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-9" id="sec-4034">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-25at4.44.53PM.png" alt="" data-image-width="1930" data-image-height="1116">
+        <p class="u-text u-text-1">By default, imshow() will detect its a 2-dimensional array, and make a pseudocolor image. You can convert it to grayscale using the parameter, cmap = plt.cm.gray_r<br>
+          <br>Next, we can show the first 30 images with the following code
+        </p>
+        <img class="u-image u-image-default u-image-2" src="images/ScreenShot2023-02-25at5.16.39PM.png" alt="" data-image-width="2530" data-image-height="928">
+        <p class="u-text u-text-2">Next up splitting into training and testing sets, as a reminder,&nbsp;X is the feature data,&nbsp;y is the target data<br>
+          <br>
+          <br>
+          <br>
+          <br>test_size = 0.33 means 33% of the data is used for testing<br>random_state = 99 means the data is split randomly with a seed of 99<br>stratify = y means the data is split in a way that the proportion of each class is the same in the training and test data<br>
+          <br>Next Fitting the Model
+        </p>
+        <img class="u-image u-image-default u-image-3" src="images/ScreenShot2023-02-26at2.48.01PM.png" alt="" data-image-width="2408" data-image-height="208">
+        <img class="u-image u-image-default u-image-4" src="images/ScreenShot2023-02-26at3.11.48PM.png" alt="" data-image-width="1578" data-image-height="222">
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-10" id="sec-173e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">KNeighborsClassifiers - algorithm parameter</h3>
+        <p class="u-text u-text-2">There are three algorithms you can specify to use, by defualt it is set to auto, which automatically determines which algorithm to use. First, the brute force algorithm</p>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="images/ScreenShot2023-02-26at3.58.55PM.png" alt="" data-image-width="1198" data-image-height="892">
+        <p class="u-text u-text-3"> The brute force algorithm computes the distance between a new instance and all instances in the training set, sorts distances, selects the k nearest neighbors, and does a majority vote.<br>Time complexity: O(k * n * d) where n is the number of points in the training dataset, d is the data dimesnitonality, and k is number of neighbors.<br>
+          <br>k-d tree method and ball tree method both organize the training points from X into a tree data strucutre, that allows for faster nearest neighbors lookup.<br>In summary, these methods create a tree data strucutre that splits the data into k-dimensions of space, (k here being k dimensions). They have training time and space complexity, unlike the brute force approach.<br>Prediction time complexity: O(k * log(n))<br>Prediction time space Complexity: O(1)<br>
+          <br>
+          <br>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-11" id="sec-ccae">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">p value, power parameter for the Minkowski metric</h3>
+        <p class="u-text u-text-2">When p = 1, manhattan distance is used. Manhattan distance is less computational intensive<br>When p = 2, euclidean distance is used. The minkowski distance is equal to the manhattan distance when p = 1, and equal to the euclidean distance when p = 2. For any other number, the minkowski distance is used
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-28at4.21.29PM.png" alt="" data-image-width="2000" data-image-height="612">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-12" id="sec-081a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">Making Predictions&nbsp;</h3>
+        <img class="u-image u-image-default u-image-1" src="images/ScreenShot2023-02-28at4.29.16PM.png" alt="" data-image-width="1142" data-image-height="342">
       </div>
     </section>
     

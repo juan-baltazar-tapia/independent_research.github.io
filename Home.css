@@ -499,14 +499,6 @@
 }
 
 @media (max-width: 1199px) {
-  .u-section-3 .u-sheet-1 {
-    min-height: 710px;
-  }
-
-  .u-section-3 .u-layout-wrap-1 {
-    width: 590px;
-  }
-
   .u-section-3 .u-layout-cell-1 {
     min-height: 590px;
   }
@@ -522,17 +514,11 @@
   .u-section-3 .u-text-2 {
     margin-right: 162px;
   }
-
-  .u-section-3 .u-list-1 {
-    height: auto;
-    margin-top: -590px;
-    margin-bottom: 78px;
-  }
 }
 
 @media (max-width: 991px) {
   .u-section-3 .u-sheet-1 {
-    min-height: 974px;
+    min-height: 212px;
   }
 
   .u-section-3 .u-layout-wrap-1 {
@@ -543,11 +529,6 @@
 
   .u-section-3 .u-layout-cell-1 {
     min-height: 577px;
-  }
-
-  .u-section-3 .u-list-1 {
-    width: 710px;
-    margin: 20px auto 60px 0;
   }
 
   .u-section-3 .u-repeater-1 {
@@ -565,9 +546,7 @@
   }
 
   .u-section-3 .u-list-1 {
-    width: 540px;
     margin-right: 138px;
-    margin-left: auto;
   }
 
   .u-section-3 .u-repeater-1 {
@@ -579,40 +558,13 @@
     padding-right: 10px;
   }
 
-  .u-section-3 .u-text-3 {
-    margin-right: 24px;
-  }
-
-  .u-section-3 .u-text-4 {
-    margin-left: 0;
-  }
-
   .u-section-3 .u-container-layout-3 {
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  .u-section-3 .u-text-5 {
-    margin-right: 0;
-  }
-
-  .u-section-3 .u-text-6 {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 575px) {
-  .u-section-3 .u-sheet-1 {
-    min-height: 976px;
-  }
-
-  .u-section-3 .u-layout-wrap-1 {
-    margin-top: 31px;
-    width: auto;
-    margin-right: initial;
-    margin-left: initial;
-  }
-
   .u-section-3 .u-text-1 {
     font-size: 2.25rem;
     margin-left: 0;
@@ -633,15 +585,23 @@
   .u-section-3 .u-list-1 {
     width: 340px;
     margin-right: 0;
-    margin-bottom: 31px;
   }
 
   .u-section-3 .u-text-3 {
-    margin-right: 0;
+    margin-right: 72px;
+    margin-left: 20px;
+  }
+
+  .u-section-3 .u-text-4 {
     margin-left: 20px;
   }
 
   .u-section-3 .u-text-5 {
+    margin-right: 72px;
+    margin-left: 20px;
+  }
+
+  .u-section-3 .u-text-6 {
     margin-left: 20px;
   }
 }.u-section-4 .u-sheet-1 {
